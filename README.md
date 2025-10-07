@@ -1,7 +1,7 @@
 # Employee Data Management System
 
 ## Overview
-This is a **full-stack MERN application** for managing employee records efficiently. The system allows admin users to **add, view, update, and delete employee information** in a user-friendly interface. It is designed for organizations to maintain their employee database securely and effectively.
+This is a **full-stack  application** for managing employee records efficiently. The system allows admin users to **add, view, update, and delete employee information** in a user-friendly interface. It is designed for organizations to maintain their employee database securely and effectively.
 
 ## Features
 - **CRUD Operations:** Create, Read, Update, Delete employee records
