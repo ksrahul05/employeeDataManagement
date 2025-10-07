@@ -33,3 +33,9 @@ export const deleteEmployee = (id, callback) => {
     callback(err, { id, changes: this.changes });
   });
 };
+export const getEmployeeCount = (callback) => {
+  db.get(`SELECT COUNT(*) AS count FROM employees`, [], (err, row) => {
+    if (err) callback(err, null);
+    else callback(null, row.count);
+  });
+};

@@ -4,11 +4,13 @@ import {
   fetchEmployees,    // GET /api/employees
   fetchEmployeeById, // GET /api/employees/:id
   editEmployee,      // PUT /api/employees/:id
-  removeEmployee,    // DELETE /api/employees/:id
+  removeEmployee, 
+  getCount,   // DELETE /api/employees/:id
 } from "../controllers/employeeController.js";
 
 const router = express.Router();
 
+router.get("/count", getCount);
 router.post("/", addEmployee);
 router.get("/", fetchEmployees);
 router.get("/:id", fetchEmployeeById);

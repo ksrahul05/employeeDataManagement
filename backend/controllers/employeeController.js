@@ -4,6 +4,7 @@ import {
   getEmployeeById,
   updateEmployee,
   deleteEmployee,
+  getEmployeeCount,
 } from "../models/employeeModel.js";
 
 export const addEmployee = (req, res) => {
@@ -47,5 +48,14 @@ export const removeEmployee = (req, res) => {
     if (err) return res.status(500).json({ message: "DB error", error: err.message });
     if (result.changes === 0) return res.status(404).json({ message: "Employee not found" });
     res.json({ message: "Employee deleted successfully", data: result });
+  });
+};
+export const getCount = (req, res) => {
+  getEmployeeCount((err, count) => {
+    if (err) {
+      res.status(500).json({ error: "Failed to fetch employee count" });
+    } else {
+      res.status(200).json({ totalEmployees: count });
+    }
   });
 };
