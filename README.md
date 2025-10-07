@@ -13,6 +13,6 @@ This is a **full-stack MERN application** for managing employee records efficien
 ## Technologies Used
 - **Frontend:** React.js, CSS, HTML  
 - **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
+- **Database:** SQLite  
 - **Version Control:** Git & GitHub  
 
